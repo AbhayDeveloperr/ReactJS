@@ -1,27 +1,12 @@
 import React from 'react'
-// import {Bookmark} from "lucide-react";
+import Card from './components/Card'
+// import User from './components/User'
 
 const App = () => {
   return (
     <div className='parent'>
-
-      <div className="card">
-        <div className="top">
-          <img src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg" alt="" />
-          <button>Save</button>
-        </div>
-        <div className="centre">
-          <h3>Amazon <span>5 days ago</span></h3>
-          <h2>Senior UI/Ux designer</h2> 
-          <div>
-            <h4>Part Time</h4>
-            <h4>Senior Level</h4>
-          </div>         
-        </div>
-        <div className="bottom">
-          
-        </div>
-      </div>
+      <Card />
+      
     </div>
   )
 }
