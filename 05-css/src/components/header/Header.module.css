@@ -1,0 +1,12 @@
+.Header{
+  background-color: lightseagreen;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+.logo{
+  text-decoration: underline;
+}
