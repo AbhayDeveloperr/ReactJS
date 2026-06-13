@@ -38,14 +38,14 @@ const App = () => {
       }} className='flex justify-between items-start p-10'>
         <div className='flex flex-col w-1/2 items-start gap-4'>
           <h1 className='text-2xl font-bold'>Add Notes</h1>
-          <input className='px-5 py-2 w-full border-2 font-medium rounded outline-none' type="text" placeholder='Enter Notes Heading' value={title} onChange={(e)=>{
+          <input required className='px-5 py-2 w-full border-2 font-medium rounded outline-none' type="text" placeholder='Enter Notes Heading' value={title} onChange={(e)=>{
             setTitle(e.target.value);
             
           }} />
-          <textarea className='px-5 py-2 w-full h-32 border-2 font-medium rounded outline-none' type="text" placeholder='Write Details' value={details} onChange={(e)=>{
+          <textarea required className='px-5 py-2 w-full h-32 border-2 font-medium rounded outline-none' type="text" placeholder='Write Details' value={details} onChange={(e)=>{
             setDetails(e.target.value)
           }} />        
-          <button className='bg-white w-full font-medium active:scale-95 cursor-pointer text-black px-5 py-2 rounded outline-none'>Add Notes</button>
+          <button type='submit' className='bg-white w-full font-medium active:scale-95 cursor-pointer text-black px-5 py-2 rounded outline-none'>Add Notes</button>
         </div>
         <img className='w-44 pt-12' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtOFIB0_cJxWODfvwcRUfHbcLQaB1K7rLegw&s" alt="" />
       </form>
