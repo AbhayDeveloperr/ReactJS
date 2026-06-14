@@ -1,18 +1,24 @@
-import React from 'react'
+import axios from "axios";
+import { useState } from "react";
 
 const App = () => {
 
+  const [data , setData] = useState([])
+
   const getData=async()=>{
-    let response= await fetch('https://jsonplaceholder.typicode.com/todos/1')
-    const data = await response.json()
-    console.log(data);
-    
+    let response = await axios.get('https://picsum.photos/v2/list')
+    setData(response.data);
     
   }
 
   return (
     <div>
-      <button onClick={getData}>Click me</button>
+      <button onClick={getData}>Click Me</button>
+      <div>
+        {data.map(function(elem,idx){
+          return <h3>Hello, {elem.author} {idx}</h3>
+        })}
+      </div>
     </div>
   )
 }
