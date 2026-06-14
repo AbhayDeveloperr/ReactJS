@@ -18,6 +18,7 @@ const App = () => {
 
   useEffect(function(){
     console.log('useEffect is runninng..');
+    aChange()
     
   },[a])
 
