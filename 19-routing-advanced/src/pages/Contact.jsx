@@ -9,6 +9,7 @@ const Contact = () => {
         <Link className='text-xl font-semibold' to='/contact/developer'>Developer</Link>
       </div>
       {/* <h1>Contact</h1> */}
+      {/* Nested Routing ko define karne ke liye Outlet component ka use karte hai. Jaha par bhi Outlet component hoga, waha par nested route ka component render hoga. */}
       <Outlet/>
     </div>
   )
