@@ -17,7 +17,7 @@ const App = () => {
     getData()
   },[index])
 
-  let printUserData =  <h3 className='text-gray-400 text-sm absolute top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2'>Loading...</h3>
+  let printUserData =  <h3 className='text-gray-400 text-xl absolute top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2'>Loading...</h3>
   if(userData.length>0){
     printUserData = userData.map(function(elem,idx){
       return  <div key={idx}> 
@@ -33,7 +33,7 @@ const App = () => {
       className='bg-green-600 active:scale-95 text-white px-5 py-2 mb-3 rounded '>Get Data
       </button>
       {/* <h1 className='text-6xl bg-red-400 text-gray-200 font-semibold fixed'>{index}</h1> */}
-      <div className='flex h-[82%] flex-wrap gap-4 p-4'>
+      <div className='flex flex-wrap gap-4 p-4'>
         {printUserData}
       </div>
       
@@ -60,3 +60,6 @@ const App = () => {
 }
 
 export default App
+
+
+
