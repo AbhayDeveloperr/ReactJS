@@ -40,6 +40,7 @@ const App = () => {
       {/* button for prev Next ---- */}
       <div className='flex items-center p-4 justify-center gap-6 '>
         <button
+        style={{opacity: index ==1 ? 0.6 : 1}}
         onClick={()=>{
           if(index>1){
             setIndex(index-1)
