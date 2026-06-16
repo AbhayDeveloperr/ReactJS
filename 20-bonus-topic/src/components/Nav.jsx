@@ -1,5 +1,7 @@
 import React from 'react'
 
+// isme child se property parent me ja raha hai
+
 const Nav = (props) => {
 
     function themeChanged(){
